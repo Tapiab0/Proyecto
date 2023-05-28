@@ -65,9 +65,18 @@ public class Interfaz extends javax.swing.JFrame {
         ValorQ = new javax.swing.JTextField();
         RevFalt = new javax.swing.JButton();
         JLimp = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        EspQ = new javax.swing.JTextField();
+        EspC = new javax.swing.JTextField();
+        EspCh = new javax.swing.JTextField();
+        EspSP = new javax.swing.JTextField();
+        EspSSA = new javax.swing.JTextField();
+        EspSR = new javax.swing.JTextField();
+        EspJ = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 0, 0));
+        setMinimumSize(new java.awt.Dimension(600, 350));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -124,49 +133,49 @@ public class Interfaz extends javax.swing.JFrame {
                 IngProductoActionPerformed(evt);
             }
         });
-        getContentPane().add(IngProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, -1, 30));
+        getContentPane().add(IngProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, -1, 30));
 
         jLabel9.setText("Total");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, -1, -1));
 
         TotalQ.setEditable(false);
-        getContentPane().add(TotalQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 78, -1));
+        getContentPane().add(TotalQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 78, -1));
 
         jLabel10.setText("Faltan");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, -1, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, -1, -1));
 
         FaltaQ.setEditable(false);
-        getContentPane().add(FaltaQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 79, -1));
+        getContentPane().add(FaltaQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 50, 79, -1));
 
         TotalC.setEditable(false);
-        getContentPane().add(TotalC, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 78, -1));
+        getContentPane().add(TotalC, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 78, -1));
 
         TotalCh.setEditable(false);
-        getContentPane().add(TotalCh, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 78, -1));
+        getContentPane().add(TotalCh, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 78, -1));
 
         TotalSP.setEditable(false);
-        getContentPane().add(TotalSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 78, -1));
+        getContentPane().add(TotalSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 78, -1));
 
         TotalSSA.setEditable(false);
-        getContentPane().add(TotalSSA, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 78, -1));
+        getContentPane().add(TotalSSA, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, 78, -1));
 
         TotalSR.setEditable(false);
-        getContentPane().add(TotalSR, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 78, -1));
+        getContentPane().add(TotalSR, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 78, -1));
 
         TotalJ.setEditable(false);
-        getContentPane().add(TotalJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 78, -1));
+        getContentPane().add(TotalJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 78, -1));
 
         FaltaC.setEditable(false);
-        getContentPane().add(FaltaC, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 79, -1));
+        getContentPane().add(FaltaC, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 79, -1));
 
         FaltaCh.setEditable(false);
-        getContentPane().add(FaltaCh, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 130, 79, -1));
+        getContentPane().add(FaltaCh, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 79, -1));
 
         FaltaSP.setEditable(false);
-        getContentPane().add(FaltaSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, 79, -1));
+        getContentPane().add(FaltaSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 79, -1));
 
         FaltaSSA.setEditable(false);
-        getContentPane().add(FaltaSSA, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, 79, -1));
+        getContentPane().add(FaltaSSA, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 79, -1));
 
         FaltaSR.setEditable(false);
         FaltaSR.addActionListener(new java.awt.event.ActionListener() {
@@ -174,15 +183,15 @@ public class Interfaz extends javax.swing.JFrame {
                 FaltaSRActionPerformed(evt);
             }
         });
-        getContentPane().add(FaltaSR, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 79, -1));
+        getContentPane().add(FaltaSR, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 240, 79, -1));
 
         FaltaJ.setEditable(false);
-        getContentPane().add(FaltaJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, 79, -1));
+        getContentPane().add(FaltaJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 79, -1));
 
         jLabel12.setBackground(new java.awt.Color(0, 204, 204));
         jLabel12.setFont(new java.awt.Font("Agency FB", 0, 18)); // NOI18N
         jLabel12.setText("Cremeria \"La Q'Sabrosa\"");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, -1, -1));
 
         ValorQ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,7 +207,7 @@ public class Interfaz extends javax.swing.JFrame {
                 RevFaltActionPerformed(evt);
             }
         });
-        getContentPane().add(RevFalt, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, 160, 30));
+        getContentPane().add(RevFalt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, 160, 30));
 
         JLimp.setBackground(new java.awt.Color(255, 0, 0));
         JLimp.setFont(new java.awt.Font("Tw Cen MT Condensed", 3, 24)); // NOI18N
@@ -209,7 +218,17 @@ public class Interfaz extends javax.swing.JFrame {
                 JLimpActionPerformed(evt);
             }
         });
-        getContentPane().add(JLimp, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 303, -1, 40));
+        getContentPane().add(JLimp, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, 40));
+
+        jLabel11.setText("Esperado");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, -1, -1));
+        getContentPane().add(EspQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 50, 70, -1));
+        getContentPane().add(EspC, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 90, 70, -1));
+        getContentPane().add(EspCh, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 130, 70, -1));
+        getContentPane().add(EspSP, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 170, 70, -1));
+        getContentPane().add(EspSSA, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 200, 70, -1));
+        getContentPane().add(EspSR, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 240, 70, -1));
+        getContentPane().add(EspJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 280, 70, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -223,6 +242,22 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_ValorCActionPerformed
 
     private void IngProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IngProductoActionPerformed
+        i.setEqueso(Double.parseDouble(EspQ.getText()));
+        i.setEcrema(Double.parseDouble(EspC.getText()));
+        i.setEchorizo(Double.parseDouble(EspCh.getText()));
+        i.setEsalchichaP(Double.parseDouble(EspSP.getText()));
+        i.setEsalchichaSA(Double.parseDouble(EspSSA.getText()));
+        i.setEsalchichaR(Double.parseDouble(EspSR.getText()));
+        i.setEjamon(Double.parseDouble(EspJ.getText()));
+        
+        EspQ.setText(String.valueOf(i.getEqueso()));
+        EspC.setText(String.valueOf(i.getEcrema()));
+        EspCh.setText(String.valueOf(i.getEchorizo()));
+        EspSP.setText(String.valueOf(i.getEsalchichaP()));
+        EspSSA.setText(String.valueOf(i.getEsalchichaSA()));
+        EspSR.setText(String.valueOf(i.getEsalchichaR()));
+        EspJ.setText(String.valueOf(i.getEjamon()));
+        
         i.setQueso(Double.parseDouble(ValorQ.getText()));
         i.SumarQ();
         TotalQ.setText(String.valueOf(i.getTqueso()));
@@ -365,6 +400,13 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField EspC;
+    private javax.swing.JTextField EspCh;
+    private javax.swing.JTextField EspJ;
+    private javax.swing.JTextField EspQ;
+    private javax.swing.JTextField EspSP;
+    private javax.swing.JTextField EspSR;
+    private javax.swing.JTextField EspSSA;
     private javax.swing.JTextField FaltaC;
     private javax.swing.JTextField FaltaCh;
     private javax.swing.JTextField FaltaJ;
@@ -392,6 +434,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

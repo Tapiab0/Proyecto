@@ -27,6 +27,13 @@ public class Ingresar {
     private double rsalchichasa;
     private double rsalchichar;
     private double rjamon;
+    private double equeso;
+    private double echorizo;
+    private double ecrema;
+    private double esalchichap;
+    private double esalchichasa;
+    private double esalchichar;
+    private double ejamon;
     
     public void setQueso(double queso){
         this.queso = queso;}
@@ -57,6 +64,21 @@ public class Ingresar {
         this.tsalchichar = tsalchichar;}
     public void setTjamon(double tjamon){
         this.tjamon = tjamon;}
+    
+    public void setEqueso(double equeso){
+        this.equeso = equeso;}
+    public void setEcrema(double ecrema){
+        this.ecrema = ecrema;}
+    public void setEchorizo(double echorizo){
+        this.echorizo = echorizo;}
+    public void setEsalchichaP(double esalchichap){
+        this.esalchichap = esalchichap;}
+    public void setEsalchichaSA(double esalchichasa){
+        this.esalchichasa = esalchichasa;}
+    public void setEsalchichaR(double esalchichar){
+        this.esalchichar = esalchichar;}
+    public void setEjamon(double ejamon){
+        this.ejamon = ejamon;}
     
     public void setRqueso(double rqueso){
         this.rqueso = rqueso;}
@@ -103,6 +125,21 @@ public class Ingresar {
     public double getTjamon(){
         return tjamon;}
         
+    public double getEqueso(){
+        return equeso;}
+    public double getEcrema(){
+        return ecrema;}
+    public double getEchorizo(){
+        return echorizo;}
+    public double getEsalchichaP(){
+        return esalchichap;}
+    public double getEsalchichaSA(){
+        return esalchichasa;}
+    public double getEsalchichaR(){
+        return esalchichar;}
+    public double getEjamon(){
+        return ejamon;}
+        
     public double getRqueso(){
         return rqueso;}
     public double getRcrema(){
@@ -134,17 +171,17 @@ public class Ingresar {
         this.tjamon = (this.tjamon + this.jamon);}
 
     public void RestaQ(){
-        this.rqueso = (80 - this.tqueso);}
+        this.rqueso = (this.equeso - this.tqueso);}
     public void RestaC(){
-        this.rcrema = (100 - this.tcrema );}
+        this.rcrema = (this.ecrema - this.tcrema );}
     public void RestaCh(){
-        this.rchorizo = (56 - this.tchorizo);}
+        this.rchorizo = (this.echorizo - this.tchorizo);}
     public void RestaSP(){
-        this.rsalchichap = (40 - this.tsalchichap);}
+        this.rsalchichap = (this.esalchichap - this.tsalchichap);}
     public void RestaSSA(){
-        this.rsalchichasa = (34 - this.tsalchichasa);}
+        this.rsalchichasa = (this.esalchichasa - this.tsalchichasa);}
     public void RestaSR(){
-        this.rsalchichar = (24 - this.tsalchichar);}
+        this.rsalchichar = (this.esalchichar - this.tsalchichar);}
     public void RestaJ(){
-        this.rjamon = (60 - this.tjamon);}
+        this.rjamon = (this.ejamon - this.tjamon);}
 }
